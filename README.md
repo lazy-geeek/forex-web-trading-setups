@@ -1,0 +1,1 @@
+# forex-web-trading-setups
