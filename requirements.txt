@@ -1,0 +1,9 @@
+Flask
+beautifulsoup4
+python-dotenv
+PyYAML
+lxml[html_clean]
+openai
+requests
+fake-useragent
+selenium

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forex Setup Finder</title>
+</head>
+
+<body>
+    <h1>Forex Trading Setups</h1>
+    <form method="post">
+        <button type="submit">Refresh</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Site</th>
+                <th>Entry Price</th>
+                <th>Stop Loss</th>
+                <th>Take Profit</th>
+                <th>Risk/Reward Ratio</th>
+                <th>Confidence</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for setup in setups %}
+            <tr>
+                <td>{{ setup.site }}</td>
+                <td>{{ setup.entry_price }}</td>
+                <td>{{ setup.stop_loss }}</td>
+                <td>{{ setup.take_profit }}</td>
+                <td>{{ setup.risk_reward_ratio }}</td>
+                <td>{{ setup.confidence_score }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+sites:
+  - name: ForexLive
+    url: https://www.forexlive.com/
+    selectors:
+      article: ".article-item"
+      title: ".title"
+      content: ".content"
+
+  - name: BabyPips
+    url: https://www.babypips.com/
+    selectors:
+      article: ".card"
+      title: ".card-title"
+      content: ".card-text"
